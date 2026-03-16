@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Divine Outreach | Upcoming Events</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="main-nav">
+    <div class="nav-wrapper">
+      <a href="index.html" class="nav-logo">
+        <img src="./images/logo.jpeg" alt="Divine Outreach Logo">
+        <div class="logo-text">
+          <span class="logo-name">Divine Outreach</span>
+          <span class="logo-sub">charity organisation</span>
+        </div>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <ul class="nav-menu" id="navLinks">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#programs">Focus</a></li>
+        <li><a href="index.html#impact">Impact</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="events.html" class="active-link">Events</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+
+      <a href="index.html#support" class="donate-btn">Donate</a>
+    </div>
+  </nav>
+
+  <section class="events-hero">
+    <div class="events-hero-overlay"></div>
+    <div class="container events-hero-content">
+      <p class="events-mini-title">UPCOMING EVENTS</p>
+      <h1>Join Us in Upcoming Outreach and Mentorship Events</h1>
+      <p>
+        Be part of the moments where faith meets action through outreach,
+        encouragement, fellowship, and support for vulnerable children and families.
+      </p>
+    </div>
+  </section>
+
+  <section class="events-list-section">
+    <div class="container events-wrapper">
+      <div class="events-heading">
+        <p class="events-label">DIVINE OUTREACH EVENTS</p>
+        <h2>Upcoming Events</h2>
+      </div>
+
+      <div class="events-list">
+
+        <article class="event-card">
+  <div class="event-date">
+    <span class="event-day">2026</span>
+    <span class="event-month">NOV</span>
+  </div>
+
+  <div class="event-details">
+    <p class="event-meta">
+      <span><i class="fas fa-calendar"></i> Running throughout the year until November</span>
+      <span><i class="fas fa-location-dot"></i> Kibera Bible Club, Nairobi</span>
+    </p>
+
+    <h3>Divine Outreach 2026 Mentorship Program – Kibera Bible Club</h3>
+
+    <p class="event-preview">
+      In 2026, Divine Outreach continues its mission of raising a generation grounded in faith,
+      character, and purpose through the Mentorship Program at Kibera Bible Club, running
+      throughout the year until November.
+    </p>
+
+    <div class="event-full-text" id="mentorshipDetails">
+      <p>
+        This initiative, carried out in partnership with Love Acts 4 Africa, is dedicated to
+        guiding children and young people by providing spiritual mentorship, life guidance,
+        and encouragement to help them grow with confidence and hope.
+      </p>
+
+      <p>
+        Through regular mentorship sessions, interactive activities, and biblical teachings,
+        the program nurtures values such as integrity, resilience, compassion, and leadership.
+      </p>
+
+      <p>
+        The mentorship program creates a safe and supportive environment where children can learn,
+        ask questions, and be inspired to pursue a better future despite the challenges around them.
+        Together, Divine Outreach and Love Acts 4 Africa are committed to empowering these young
+        lives spiritually, emotionally, and socially.
+      </p>
+
+      <p>
+        As the program continues throughout the year, both organizations remain devoted to walking
+        alongside these children—offering guidance, encouragement, and the message of hope that every
+        child deserves the opportunity to grow, dream, and thrive.
+      </p>
+    </div>
+
+    <button class="event-link read-more-btn" id="readMoreBtn" type="button">
+      Read More <span>&rsaquo;</span>
+    </button>
+  </div>
+</article>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 Divine Outreach Charity Organisation</p>
+      <p class="footer-note">Caring Beyond Limits: Empowering Lives, Transforming Communities</p>
+
+      <div class="footer-social">
+        <a href="https://www.facebook.com/profile.php?id=100091860741472" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/divineoutreachke?igsh=MWtxbzQyanZjNHlobQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@divine_outreach_ke?_r=1&_t=ZS-94dRq1vraHU" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  const hamburger = document.getElementById("hamburger");
+  const navLinks = document.getElementById("navLinks");
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+
+    document.querySelectorAll("#navLinks a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+      });
+    });
+  }
+
+  const readMoreBtn = document.getElementById("readMoreBtn");
+  const mentorshipDetails = document.getElementById("mentorshipDetails");
+
+  if (readMoreBtn && mentorshipDetails) {
+    readMoreBtn.addEventListener("click", () => {
+      mentorshipDetails.classList.toggle("show");
+      readMoreBtn.classList.toggle("active");
+
+      if (mentorshipDetails.classList.contains("show")) {
+        readMoreBtn.innerHTML = 'Read Less <span>&rsaquo;</span>';
+      } else {
+        readMoreBtn.innerHTML = 'Read More <span>&rsaquo;</span>';
+      }
+    });
+  }
+</script>
+</body>
+</html>
