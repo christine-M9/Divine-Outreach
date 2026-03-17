@@ -2524,3 +2524,259 @@ footer {
 .footer-social a i.fa-whatsapp {
   color: #25D366;
 }
+/* DONATE PAGE */
+.active-donate-btn {
+  background: #d9603d;
+}
+
+.donate-hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("./images/do2.jpeg") center/cover no-repeat;
+}
+
+.donate-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(40, 23, 18, 0.45), rgba(40, 23, 18, 0.62));
+}
+
+.donate-hero-content {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  max-width: 820px;
+}
+
+.donate-mini-title {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #f3d7a6;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.donate-hero-content h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 74px;
+  line-height: 0.98;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.donate-hero-content p {
+  font-size: 19px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.donate-page-section {
+  background: #f5f4f3;
+  padding: 100px 0;
+}
+
+.donate-page-wrapper {
+  position: relative;
+}
+
+.donate-page-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 55px;
+}
+
+.donate-page-heading h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 62px;
+  line-height: 1;
+  color: #111111;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.donate-page-heading p {
+  color: #6b5b52;
+  font-size: 18px;
+}
+.donate-methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 35px;
+}
+
+.donate-card {
+  background: #ffffff;
+  border: 1px solid #ddd4cf;
+  border-radius: 26px;
+  padding: 34px 30px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.donate-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #f7eee8;
+  color: #e67655;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.donate-card h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 42px;
+  line-height: 1.05;
+  color: #111111;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.donate-description {
+  font-size: 17px;
+  color: #5b5450;
+  margin-bottom: 22px;
+}
+
+.donate-detail-box {
+  background: #faf4ec;
+  border: 1px solid #eadccf;
+  border-radius: 18px;
+  padding: 18px 16px;
+  margin-bottom: 22px;
+}
+
+.donate-detail-label {
+  display: block;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #b07a2a;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.donate-detail-box p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4b2e2e;
+  word-break: break-word;
+}
+
+.donate-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.donate-action-btn,
+.copy-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 22px;
+  border-radius: 999px;
+  font-family: 'Jost', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.donate-action-btn {
+  background: #e56f4c;
+  color: #ffffff;
+}
+
+.donate-action-btn:hover {
+  background: #d9603d;
+}
+
+.copy-btn {
+  background: #f1e5dc;
+  color: #4b2e2e;
+}
+
+.copy-btn:hover {
+  background: #e8d7ca;
+}
+
+.donate-note-box {
+  background: #fffaf5;
+  border: 1px solid #eadccf;
+  border-radius: 24px;
+  padding: 34px 30px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.donate-note-box h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
+  color: #111111;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.donate-note-box p {
+  font-size: 17px;
+  color: #5b5450;
+}
+
+@media (max-width: 1100px) {
+  .donate-methods {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .donate-hero-content h1 {
+    font-size: 46px;
+  }
+
+  .donate-page-heading h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .donate-methods {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .donate-hero {
+    min-height: 340px;
+  }
+
+  .donate-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .donate-hero-content p,
+  .donate-page-heading p,
+  .donate-description,
+  .donate-note-box p {
+    font-size: 16px;
+  }
+
+  .donate-card h3 {
+    font-size: 30px;
+  }
+
+  .donate-note-box h3 {
+    font-size: 30px;
+  }
+
+  .donate-detail-box p {
+    font-size: 17px;
+  }
+}
